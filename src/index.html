@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Weekday Calculator</title>
-  </head>
-  <body>
-    <h1>Weekday Calculator</h1>
+<head>
+  <meta charset="utf-8">
+  <title>Weekday Calculator</title>
+</head>
+<body>
+<div class="container">
+  <h1>Weekday Calculator</h1>
 
-    <form action="/action_page.php">
-  Birthday:
-  <input type="date" name="bday">
-  <input type="submit">
-</form>
+  <form id="frontForm">
+    <label for="userDate">Please enter a date:</label>
+    <input id="userDate" type="date" name="userDate">
+    <button type="submit" class="btn btn-danger">Submit!</button>
+  </form>
 
-  </body>
+</div>
+</body>
 </html>

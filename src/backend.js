@@ -1,13 +1,9 @@
 export let MyDate = function(dateEntered) {
   this.dateEntered = dateEntered;
+  this.dateArray = [];
 };
 
-MyDate.prototype.dateCheck = function(myDate) {
-  // var dateEntered = new MyDate();
-  // var newDate = '2015-03-25';
-  // var myDate = new MyDate(newDate);
-  console.log(this.dateEntered);
-  console.log(myDate);
+MyDate.prototype.dateCheck = function() {
   if (this.dateEntered === this.dateEntered){
     return true;
   }
@@ -16,13 +12,11 @@ MyDate.prototype.dateCheck = function(myDate) {
   }
 };
 
-
-
-
-
-// var date = new Date();
-// console.log(date instanceof Date && !isNaN(date.valueOf()));
-//
-// function isValidDate(d) {
-//   return d instanceof Date && !isNaN(d);
-// };
+MyDate.prototype.splitDate = function() {
+  let seperatedDate = this.dateEntered.split('-');
+  MyDate.dateArray.push(seperatedDate);
+  // seperatedDate.forEach(function(thing){
+  //   MyDate.dateArray.push(thing);
+  // });
+  return seperatedDate;
+};
